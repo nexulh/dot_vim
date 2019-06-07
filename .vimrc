@@ -147,6 +147,9 @@ set virtualedit=block,onemore
 " Speed up macros
 set lazyredraw
 
+" Speed up status line
+set updatetime=100
+
 " Store backup-thingies elsewhere
 set backupdir=~/.tmp
 set directory=~/.tmp
@@ -493,6 +496,8 @@ let NERDTreeIgnore += ['\.db$']
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 let g:go_fmt_command = "goimports"
+let g:go_auto_type_info = 1
+let g:go_auto_sameids = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
