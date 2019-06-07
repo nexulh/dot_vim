@@ -126,6 +126,9 @@ inoremap <expr><CR> (pumvisible() ? (empty(v:completed_item)?"\<CR>\<CR>":"\<C-y
 
 " Use vertical split for diffs
 set diffopt+=vertical
+set diffopt+=iwhite
+set diffopt+=indent-heuristic
+set diffopt+=algorithm:histogram
 
 " Make backspace delete lots of things
 set backspace=indent,eol,start
