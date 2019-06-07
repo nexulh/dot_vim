@@ -84,8 +84,15 @@ set autowrite " Autowrite modified files at certain points
 " Search options
 set noincsearch
 set hlsearch
-set ignorecase smartcase infercase
+set ignorecase
+set smartcase
+set gdefault
+
+" Very magic by default
 set magic
+nnoremap ? ?\v
+nnoremap / /\v
+cnoremap %s/ %sm/
 
 " Indentation
 set autoindent
