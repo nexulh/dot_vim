@@ -159,6 +159,8 @@ set viminfo='1000,f1,:1000,/1000
 set viminfo+=!
 set history=500
 
+set timeoutlen=1000 ttimeoutlen=10
+
 
 " =============================================================================
 " ====  LOOK 'N FEEL
@@ -184,7 +186,7 @@ try
 catch
 endtry
 
-set colorcolumn=80
+"set colorcolumn=80
 
 " Split in the right direction
 set splitbelow
